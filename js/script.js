@@ -1,4 +1,4 @@
-
+const btn = document.getElementById("btn"); // object | null
 
 //Raccolta dati
 
