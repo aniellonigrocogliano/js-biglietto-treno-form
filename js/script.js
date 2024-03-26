@@ -31,24 +31,22 @@ btn.addEventListener("click", function () {
         userDiscount = 0;
     }
 
-    userPrize = userPrize - userDiscount;
-    userPrize = userPrize * 100;
-    userPrize = Math.round(userPrize);
-    userPrize = userPrize / 100;
-    userDiscount = userDiscount * 100;
-    userDiscount = Math.round(userDiscount);
-    userDiscount = userDiscount / 100;
+    userPrize= userPrize-userDiscount;
+    userPrize=userPrize*100;
+    userPrize=Math.round(userPrize);
+    userPrize=userPrize/100;
+    userDiscount=userDiscount*100;
+    userDiscount=Math.round(userDiscount);
+    userDiscount=userDiscount/100;
+    userDiscount=0-userDiscount;
 
     //verifica dati
-    // // console.log(userKm, typeof userKm,);
-    // // console.log(userAge, typeof userAge,);
-    // // console.log(systemKM, typeof systemKM,);
-    // // console.log(userPrize, typeof userPrize,);
-    // // console.log(userDiscount, typeof userDiscount,);
-    // // //stampa risultato
-    // // document.getElementById("km").innerHTML = userKm;
+     console.log(userKm, typeof userKm,);
+
+    //stampa risultato
+    document.getElementById("userkm").innerHTML = userKm;
     document.getElementById("prize").innerHTML = prize;
-    // // document.getElementById("discountnumber").innerHTML = userDiscountNum;
-    // // document.getElementById("discountprize").innerHTML = userDiscount;
-    // // document.getElementById("userprize").innerHTML = userPrize;
+    document.getElementById("discountnumber").innerHTML = userDiscountNum;
+   document.getElementById("discountprize").innerHTML = userDiscount;
+    document.getElementById("userprize").innerHTML = userPrize;
 })
